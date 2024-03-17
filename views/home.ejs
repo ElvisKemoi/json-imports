@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") -%>
+<main>
+	<h1>All Files</h1>
+    
+    <% for(var i=0; i < jsonFiles.length; i++) { %>
+            <div class="card w-75 mx-auto my-1">
+                <div class="card-body">
+                    <%= jsonFiles[i] %>
+                </div>
+            </div>
+        <% } %>
+</main>
+</body>
+</html>

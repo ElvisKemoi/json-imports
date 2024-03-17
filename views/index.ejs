@@ -1,0 +1,37 @@
+<%- include("./partials/header.ejs") -%>
+
+	
+
+		<table class="table table-striped w-75 border p-4 mx-auto">
+			<thead>
+				<tr>
+					<th class="table-header">Table Data</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% for(var i=0; i < myJson.length; i++) { %>
+				<tr>
+					<td><%= myJson[i]["postId"]%></td>
+					<td><%= myJson[i]["id"] %></td>
+					<td><%= myJson[i]["name"] %></td>
+					<td><%= myJson[i]["email"] %></td>
+					<td><%= myJson[i]["body"] %></td>
+				</tr>
+				<% } %>
+			</tbody>
+		</table>
+		<form action="/showAll" method="post" class="d-flex justify-content-center">
+			<Button class="btn btn-lg btn-outline-primary">Show All</Button>
+		</form>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+			integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

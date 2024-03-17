@@ -1,0 +1,28 @@
+postId
+id
+name
+email
+body
+
+
+
+<tr>
+					<td><%= myJson[i].postId %></td>
+					<td><%= myJson[i].id %></td>
+					<td><%= myJson[i].name %></td>
+					<td><%= myJson[i].email %></td>
+					<td><%= myJson[i].body %></td>
+				</tr>
+
+
+
+
+				<% for(var i=0; i < myJson.length; i++) { %>
+				<tr>
+					<td><%= myJson[i]["postId"]%></td>
+					<td><%= myJson[i]["id"] %></td>
+					<td><%= myJson[i]["name"] %></td>
+					<td><%= myJson[i]["email"] %></td>
+					<td><%= myJson[i]["body"] %></td>
+				</tr>
+				<% } %>
